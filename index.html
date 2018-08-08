@@ -9,23 +9,28 @@
 
 <body>
     <div class="banner-cadx cadx">
-        <div class="back-cadx banner-cadx"></div>
-        <div class="angle-cadx banner-cadx"></div>
-        <div class="logo-ssys-cadx banner-cadx"></div>
-        <div class="logo-mini-cadx banner-cadx"></div>
-        <!--        <div class="test-cadx banner-cadx"></div>-->
-        <div class="printer-cadx printer-three"></div>
-        <div class="printer-cadx printer-two"></div>
-        <div class="printer-cadx printer-one"></div>
-        <div class="btn-cadx">
-            <p>Testuj drukarkę 3D</p>
-        </div>
-        <div class="button-cover-cadx"></div>
-        <p class="text-cadx cx-1"><span class="font-cadx">Rozpocznij testy</span><br>przemysłowej drukarki 3D</p>
-        <p class="text-cadx cx-2"><span class="font-cadx">Testuj przez 2 tygodnie</span></p>
-        <div class="light-container-cadx">
-            <div class="light-cadx"></div>
-        </div>
+        <a class="banner-cx" target="_blank" href="http://cadxpert.com.pl/test-drukarka3d.html">
+
+            <div class="back-cadx banner-cadx">
+                <div class="animate-cadx"></div>
+            </div>
+            <div class="angle-cadx banner-cadx"></div>
+            <div class="logo-ssys-cadx banner-cadx"></div>
+            <div class="logo-mini-cadx banner-cadx"></div>
+            <div class="printer-cadx printer-three"></div>
+            <div class="printer-cadx printer-two"></div>
+            <div class="printer-cadx printer-one"></div>
+            <div class="btn-cadx">
+                <p>TESTUJ DRUKARKĘ 3D</p>
+            </div>
+            <div class="button-cover-cadx"></div>
+            <p class="text-cadx cx-1"><span class="font-cadx">Rozpocznij testy</span><br>przemysłowej drukarki 3D</p>
+            <p class="text-cadx cx-2"><span class="font-cadx">Testuj przez 2 tygodnie</span></p>
+            <div class="light-container-cadx">
+                <div class="light-cadx"></div>
+            </div>
+
+        </a>
 
     </div>
 
@@ -43,6 +48,21 @@
         
         .back-cadx {
             background-image: url(imgcx/back.png);
+            filter: opacity(1);
+            overflow: hidden;
+        }
+        
+        .animate-cadx {
+            position: absolute;
+            left: 110px;
+            width: 1500px;
+            height: 200px;
+            background-color: rgba(255,255,255,.4);
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-animation: animate-cadx 15s ease-in 3s infinite;
+            animation: animate-cadx 15s ease-in 3s infinite;
         }
         
         .angle-cadx {
@@ -56,11 +76,6 @@
         .logo-mini-cadx {
             background-image: url(imgcx/logo-signature.png);
         }
-        /*
-        .test-cadx {
-            background-image: url(imgcx/test-cadx.png);
-        }
-*/
         
         .printer-cadx {
             background-image: url(imgcx/F170.png);
@@ -163,13 +178,14 @@
         
         .text-cadx {
             position: absolute;
-            top: 399px;
+            top: 395px;
             left: 113px;
             color: #003c5b;
+            font-size: 18px;
         }
         
         .font-cadx {
-            font-size: 18px;
+            font-size: 20px;
         }
         
         .cx-1 {
@@ -180,7 +196,7 @@
         }
         
         .cx-2 {
-            top: 412px;
+            top: 410px;
             opacity: 0;
             -webkit-animation: text2-cx 8s linear .5s infinite;
             animation: text2-cx 8s linear .5s infinite;
@@ -204,8 +220,8 @@
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
             background-color: rgba(255, 255, 255, .3);
-            -webkit-animation: light-cadx 12s ease-in 1.5s infinite;
-            animation: light-cadx 12s ease-in 1.5s infinite;
+            -webkit-animation: light-cadx 6s ease-in 1.5s infinite;
+            animation: light-cadx 6s ease-in 1.5s infinite;
         }
         
         @-webkit-keyframes text1-cx {
@@ -307,6 +323,36 @@
             }
             53% {
                 right: -80px;
+            }
+        }
+        
+        @-webkit-keyframes animate-cadx {
+            0% {
+                left: 110px;
+            }
+            3% {
+                left: -1500px;
+            }
+            50% {
+                left: -1500px;
+            }
+            53% {
+                left: 110px;
+            }
+        }
+        
+        @keyframes animate-cadx {
+            0% {
+                left: 110px;
+            }
+            3% {
+                left: -1500px;
+            }
+            50% {
+                left: -1500px;
+            }
+            53% {
+                left: 110px;
             }
         }
     </style>
