@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Baner</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body>
+    <div class="banner-cadx cadx">
+        <div class="back-cadx banner-cadx"></div>
+        <div class="angle-cadx banner-cadx"></div>
+        <div class="logo-ssys-cadx banner-cadx"></div>
+        <div class="logo-mini-cadx banner-cadx"></div>
+        <!--        <div class="test-cadx banner-cadx"></div>-->
+        <div class="printer-cadx printer-three"></div>
+        <div class="printer-cadx printer-two"></div>
+        <div class="printer-cadx printer-one"></div>
+        <div class="btn-cadx">
+            <p>Testuj drukarkę 3D</p>
+        </div>
+        <div class="button-cover-cadx"></div>
+        <p class="text-cadx cx-1"><span class="font-cadx">Rozpocznij testy</span><br>przemysłowej drukarki 3D</p>
+        <p class="text-cadx cx-2"><span class="font-cadx">Testuj przez 2 tygodnie</span></p>
+        <div class="light-container-cadx">
+            <div class="light-cadx"></div>
+        </div>
+
+    </div>
+
+    <style>
+        .banner-cadx {
+            width: 325px;
+            height: 500px;
+            position: absolute;
+        }
+        
+        .cadx {
+            background-color: #fff;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        
+        .back-cadx {
+            background-image: url(imgcx/back.png);
+        }
+        
+        .angle-cadx {
+            background-image: url(imgcx/angle.png);
+        }
+        
+        .logo-ssys-cadx {
+            background-image: url(imgcx/LogoSSYS.png);
+        }
+        
+        .logo-mini-cadx {
+            background-image: url(imgcx/logo-signature.png);
+        }
+        /*
+        .test-cadx {
+            background-image: url(imgcx/test-cadx.png);
+        }
+*/
+        
+        .printer-cadx {
+            background-image: url(imgcx/F170.png);
+            position: absolute;
+        }
+        
+        .printer-one {
+            width: 130px;
+            height: 230px;
+            top: 100px;
+            left: 77px;
+        }
+        
+        .printer-two {
+            background-size: contain;
+            width: 130px;
+            height: 214px;
+            top: 109px;
+            left: 104px;
+        }
+        
+        .printer-three {
+            background-size: contain;
+            width: 120px;
+            height: 193px;
+            top: 118px;
+            left: 133px;
+        }
+        
+        .btn-cadx p {
+            margin: 0;
+            position: relative;
+            top: -6px;
+            z-index: 1;
+            -webkit-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+            transition: 1s;
+            font-weight: 100;
+        }
+        
+        .btn-cadx:hover p {
+            font-weight: 900;
+        }
+        
+        .btn-cadx {
+            border: none;
+            display: block;
+            text-align: center;
+            outline: none;
+            overflow: hidden;
+            position: absolute;
+            right: 79px;
+            top: 350px;
+            color: #fff;
+            font-weight: 700;
+            background-color: #003b5d;
+            padding: 17px 0px;
+            width: 168px;
+            height: 9px;
+            font-size: 13px;
+            -webkit-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+        
+        .btn-cadx:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -130px;
+            height: 730%;
+            width: 180%;
+            background: #5bc8e8;
+            -webkit-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+            -ms-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+            transform: translateX(-98%) translateY(-25%) rotate(45deg);
+        }
+        
+        .btn-cadx:hover:after {
+            -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+            -ms-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+            transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        }
+        
+        .button-cover-cadx {
+            width: 70px;
+            height: 14px;
+            background-color: #fafafa;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            top: 376px;
+            left: 36px;
+        }
+        
+        .text-cadx {
+            position: absolute;
+            top: 399px;
+            left: 113px;
+            color: #003c5b;
+        }
+        
+        .font-cadx {
+            font-size: 18px;
+        }
+        
+        .cx-1 {
+            opacity: 0;
+            -webkit-animation: text1-cx 8s linear .5s infinite reverse;
+            animation: text1-cx 8s linear .5s infinite reverse;
+            position: absolute;
+        }
+        
+        .cx-2 {
+            top: 412px;
+            opacity: 0;
+            -webkit-animation: text2-cx 8s linear .5s infinite;
+            animation: text2-cx 8s linear .5s infinite;
+        }
+        
+        .light-container-cadx {
+            width: 51px;
+            height: 45px;
+            position: absolute;
+            left: 119px;
+            top: 143px;
+            overflow: hidden;
+        }
+        
+        .light-cadx {
+            width: 100px;
+            height: 50px;
+            position: relative;
+            right: -150px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background-color: rgba(255, 255, 255, .3);
+            -webkit-animation: light-cadx 12s ease-in 1.5s infinite;
+            animation: light-cadx 12s ease-in 1.5s infinite;
+        }
+        
+        @-webkit-keyframes text1-cx {
+            0% {
+                opacity: 0;
+            }
+            55% {
+                opacity: 0;
+            }
+            60% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes text1-cx {
+            0% {
+                opacity: 0;
+            }
+            55% {
+                opacity: 0;
+            }
+            60% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes text2-cx {
+            0% {
+                opacity: 0;
+            }
+            45% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes text2-cx {
+            0% {
+                opacity: 0;
+            }
+            45% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes light-cadx {
+            0% {
+                right: -80px;
+            }
+            3% {
+                right: 110px;
+            }
+            50% {
+                right: 110px;
+            }
+            53% {
+                right: -80px;
+            }
+        }
+        
+        @keyframes light-cadx {
+            0% {
+                right: -80px;
+            }
+            3% {
+                right: 110px;
+            }
+            50% {
+                right: 110px;
+            }
+            53% {
+                right: -80px;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
